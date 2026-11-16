@@ -17,9 +17,12 @@ ULT helps learners build genuine understanding, critical thinking, problem-solvi
 - Portable progress tracking with JSON and Markdown export/import.
 - Source integrity, uncertainty tracking, and calculation verification.
 
-## Skill package
+## Repository contents
 
-The complete Agent Skill package includes the main `SKILL.md`, focused reference guides, progress templates, and acceptance tests. See the repository files for the implementation.
+- `SKILL.md` — the standalone Universal Learning Tutor v1.1 Agent Skill.
+
+The expanded distribution package also contains reference guides, progress templates,
+and acceptance tests; those supporting files are not yet included in this repository.
 
 ## Philosophy
 
