@@ -100,6 +100,10 @@ ULT must state limitations honestly and never claim unavailable actions succeede
 - `templates/session-summary.md` — session close template.
 - `tests/acceptance-tests.md` — behavioral acceptance tests.
 
+## Changelog and issue tracking
+
+See [CHANGELOG.md](CHANGELOG.md) for the ULT 1.2 changes, historical ULT 1.1 gaps, and verification status. The [GitHub Issues](https://github.com/BMoiz/universal-learning-tutor-v1.1/issues) track the recorded defects and outstanding validation work.
+
 ## Version
 
 **ULT 1.2** — introduces three distinct modes (Corrector, Lesson, Exam), a structured onboarding sequence, language-aware technical terminology, internal learning-map handling, and local-first consent-based progress storage.
