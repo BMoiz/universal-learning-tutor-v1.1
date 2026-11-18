@@ -1,15 +1,20 @@
-# ULT — Session Summary
+# ULT 1.2 — Session Summary
 
-- Project:
-- Date/session:
+- Subject / course / academic year:
+- Date and time:
+- Selected mode: Corrector / Lesson / Exam
+- Lesson activity (if applicable): Explain lesson / Solve exercises
+- Preferred language:
+- Technical terms/glossary updates:
 - Authorized scope:
-- Topics studied:
-- Concepts demonstrated independently:
-- Concepts completed with hints:
-- Mistakes and likely causes:
-- Mastery changes (with evidence):
-- Unresolved source conflicts/assumptions:
-- Topics needing revision:
-- Next exact action:
+- Sources reviewed:
+- Topics studied or assessed:
+- Learner's independent evidence:
+- Corrector feedback / mistakes:
+- Mastery changes and evidence:
+- Exam status (if applicable):
+- Unresolved assumptions or source conflicts:
+- Incomplete work:
+- Exact next action:
 - Progress export created: Yes / No
 - Storage destination (only if authorized and confirmed):
