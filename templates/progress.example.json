@@ -1,87 +1,20 @@
 {
-  "ult_version": "1.1",
+  "ult_version": "1.2",
   "record_version": "1.0",
   "updated_at": null,
-  "project": {
-    "title": "Example learning project",
-    "subject": "Chemistry",
-    "objective": "Prepare for the course examination",
-    "deadline": null,
-    "start_date": null
-  },
+  "project": {"title":"Example learning project","subject":"Chemistry","academic_year":"2026-2027","course":"General Chemistry","objective":"Prepare for the course examination","deadline":null,"start_date":null},
   "configuration": {
-    "language": "Arabic",
-    "depth": "Detailed",
-    "teaching_style": "Adaptive mixed",
-    "guidance_mode": "Socratic progressive hints",
-    "available_study_time": "2 hours/day",
-    "constraints": []
+    "mode":"lesson","lesson_activity":"solve_exercises","language":"Arabic",
+    "terminology_preference":"Preserve English technical terms inline and explain them in Arabic",
+    "glossary":[{"source_term":"Mole","learner_language_term":"مول","explanation":"وحدة كمية المادة","source_context":"Chapter 1"}],
+    "depth":"Detailed","teaching_style":"Adaptive","guidance_mode":"Socratic progressive hints",
+    "available_study_time":"2 hours/day","constraints":[]
   },
-  "scope": {
-    "authorization_level": "B",
-    "allowed_sources": ["Course PDF", "Tutorial 1"],
-    "restrictions": ["Do not add unrelated chapters"]
-  },
-  "sources": [
-    {
-      "id": "S1",
-      "name": "Course PDF",
-      "role": "Primary course reference",
-      "sections": ["Chapter 1"],
-      "notes": "",
-      "discrepancies": []
-    }
-  ],
-  "topics": [
-    {
-      "name": "Mole concept",
-      "status": "completed",
-      "mastery_level": 3,
-      "target_level": 4,
-      "evidence": [
-        {
-          "description": "Solved two familiar exercises with a minor prompt",
-          "quality": "minor_prompt",
-          "date": null,
-          "result": "Correct after guidance"
-        }
-      ],
-      "next_step": "Solve a varied problem independently"
-    }
-  ],
-  "mistake_profile": [
-    {
-      "pattern": "Premature rounding",
-      "category": "Precision",
-      "likely_cause": "Rounding intermediate values",
-      "corrective_strategy": "Keep full precision until final step",
-      "status": "Needs verification"
-    }
-  ],
-  "revision_plan": [
-    {
-      "topic": "Mole concept",
-      "due": null,
-      "priority": "High",
-      "method": "Independent retrieval problem"
-    }
-  ],
-  "assumptions": [
-    {
-      "statement": "Exam may cover Chapters 1–3",
-      "label": "ASSUMED",
-      "reason": "Tutorial coverage suggests this but no official confirmation",
-      "confidence": "Low",
-      "confirmation_required": true,
-      "impact": "Affects study plan"
-    }
-  ],
-  "session_state": {
-    "last_completed_activity": "Completed introductory mole exercises",
-    "current_topic": "Isotopes",
-    "current_exercise": "Tutorial 1, Exercise 5",
-    "pending_question": "Recalculate abundance without premature rounding",
-    "next_action": "Learner attempts corrected calculation",
-    "session_summary": "Worked on mole and isotope calculations"
-  }
+  "scope":{"authorization_level":"B","allowed_sources":["Course PDF","Tutorial 1"],"restrictions":["Do not add unrelated chapters"]},
+  "sources":[{"id":"S1","name":"Course PDF","role":"Primary course reference","academic_year":"2026-2027","sections":["Chapter 1"],"notes":"","discrepancies":[]}],
+  "topics":[{"name":"Mole concept","status":"in_progress","mastery_level":3,"target_level":4,"evidence":[{"description":"Solved two familiar exercises with a minor prompt","quality":"minor_prompt","date":null,"result":"Correct after guidance"}],"next_step":"Solve a varied problem independently"}],
+  "mistake_profile":[],
+  "revision_plan":[],
+  "assumptions":[],
+  "session_state":{"last_completed_activity":"Reviewed mole concept","current_topic":"Mole concept","current_exercise":null,"pending_question":null,"next_action":"Attempt one complete exercise","session_summary":null,"active_exam":false,"exam_status":"not_started"}
 }
