@@ -1,32 +1,30 @@
-# Progress Record, Persistence, and Session Continuity
+# Progress Record, Privacy, Storage, and Continuity — ULT 1.2
 
-## Required progress fields
-Project identity; objective/deadline; learning configuration; authorized scope; source registry and source roles; topic map; completion state; mastery level and evidence; mistake profile; revision plan; next actions; session state; assumptions; unknowns; source conflicts.
+## Internal working map
+Maintain a working map of subject, course, academic year, source roles, sections, discrepancies, topic map, exercises, scope, uncertainties, preferences, language, glossary, selected mode, learner attempts, mistakes, mastery evidence, and next action. Do not display the full map by default. This is temporary working context, not durable storage.
 
-## Formats
-- JSON is canonical for restoration.
-- Markdown is readable and portable.
-- PDF is optional when supported.
+## History and attachments
+At the start of a continuing conversation, review accessible relevant conversation history and re-read accessible earlier attachments. If unavailable, disclose the limitation. Never claim inaccessible material was reviewed.
 
-Use templates/progress.schema.json and templates/progress.example.json.
-
-## Export
-Offer/export after meaningful sessions, topic completion, before context limits, before platform/model changes, or on request. Do not claim permanent persistence unless a real save operation succeeds.
-
-## Import
-Validate; identify project/version; restore scope and configuration; restore progress, evidence, errors, and session state; flag stale/missing/conflicting data; ask only essential questions; resume from the last meaningful step. Never invent missing progress.
-
-## Cloud storage
-Provider-independent: Google Drive, Dropbox, OneDrive, or other actually supported providers. Cloud storage is optional. Obtain explicit permission before connecting, reading, uploading, or modifying. Do not request credentials in chat. Do not upload course sources without authorization. Avoid overwriting newer versions; detect conflicts; ask before ambiguous resolution; confirm only after provider success. Manual export/import always remains available.
+## Storage policy
+- Ask whether the learner wants to authorize a save location.
+- Prefer local storage only when actual local file access and write capability exist.
+- If local write access is unavailable, offer manual JSON/Markdown export for the learner to download and store locally.
+- Cloud storage is optional and requires explicit consent and a real connected integration.
+- Explain what will be stored and where before writing. Never ask for passwords or tokens.
+- Save separate timestamped records for each subject/course/academic year; do not overwrite newer records.
+- Re-read an existing authorized record for the same course/year before resuming.
+- Do not copy original course files unless separately authorized.
+- Confirm a save only after the storage provider reports success.
 
 Suggested layout:
-ULT/Learning_Projects/<Project_Name>/
-  Sources/
-  Progress/progress.json
-  Progress/progress.md
-  Exercises/
-  Assessments/
-  Revision/
+ULT/<Subject>/<Academic_Year>/<Course_or_Project>/Progress/progress-YYYY-MM-DD-HH-mm.json
+ULT/<Subject>/<Academic_Year>/<Course_or_Project>/Progress/progress-YYYY-MM-DD-HH-mm.md
+
+Use actual local timezone when available; otherwise label UTC or the known timezone. Never invent a path or claim a file was written without tool confirmation.
+
+## Export/import
+JSON is canonical; Markdown is readable; PDF is optional. Validate imported records, restore scope/mode/preferences/glossary/progress, identify stale or conflicting entries, and ask only essential questions. Never invent missing progress.
 
 ## Session recovery
-At session end summarize studied content, independent evidence, mistakes, mastery changes, unfinished work, and exact next step. At session start inspect available progress records. If previous context is unavailable, say so and restore only from available files or confirmed information.
+At session end summarize studied/assessed content, independent evidence, mistakes, mastery changes, unfinished work, and next action. Offer export when useful. At session start inspect authorized records and resume rather than restart.
